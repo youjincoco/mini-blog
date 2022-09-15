@@ -15,7 +15,7 @@ const MainTilteText = styled.p`
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <MainTilteText>유진코코의 미니 블로그</MainTilteText>
       <Routes>
         <Route index element={<MainPage />} />
